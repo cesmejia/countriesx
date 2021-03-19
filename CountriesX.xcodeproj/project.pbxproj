@@ -11,8 +11,14 @@
 		CA08847A2604535D002DABDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884792604535D002DABDA /* ContentView.swift */; };
 		CA08847C2604535E002DABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA08847B2604535E002DABDA /* Assets.xcassets */; };
 		CA08847F2604535E002DABDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA08847E2604535E002DABDA /* Preview Assets.xcassets */; };
-		CA08848A2604535F002DABDA /* CountriesXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884892604535F002DABDA /* CountriesXTests.swift */; };
-		CA0884952604535F002DABDA /* CountriesXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884942604535F002DABDA /* CountriesXUITests.swift */; };
+		CA0884AA260453BE002DABDA /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884A9260453BE002DABDA /* APICall.swift */; };
+		CA0884B2260453FF002DABDA /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884B1260453FF002DABDA /* WebRepository.swift */; };
+		CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884B626045615002DABDA /* NetworkingHelpers.swift */; };
+		CA0884CB26045842002DABDA /* WebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884CA26045842002DABDA /* WebRepositoryTests.swift */; };
+		CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */; };
+		CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884D926045AA6002DABDA /* RequestMocking.swift */; };
+		CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884E126045B21002DABDA /* MockedResponse.swift */; };
+		CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D24A2604EDFB009EE19D /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +46,16 @@
 		CA08847E2604535E002DABDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA0884802604535E002DABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA0884852604535E002DABDA /* CountriesXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA0884892604535F002DABDA /* CountriesXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesXTests.swift; sourceTree = "<group>"; };
 		CA08848B2604535F002DABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA0884902604535F002DABDA /* CountriesXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA0884942604535F002DABDA /* CountriesXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesXUITests.swift; sourceTree = "<group>"; };
-		CA0884962604535F002DABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA0884A9260453BE002DABDA /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		CA0884B1260453FF002DABDA /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
+		CA0884B626045615002DABDA /* NetworkingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		CA0884CA26045842002DABDA /* WebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepositoryTests.swift; sourceTree = "<group>"; };
+		CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedWebRepositories.swift; sourceTree = "<group>"; };
+		CA0884D926045AA6002DABDA /* RequestMocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMocking.swift; sourceTree = "<group>"; };
+		CA0884E126045B21002DABDA /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
+		CA85D24A2604EDFB009EE19D /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +88,6 @@
 			children = (
 				CA0884762604535D002DABDA /* CountriesX */,
 				CA0884882604535E002DABDA /* CountriesXTests */,
-				CA0884932604535F002DABDA /* CountriesXUITests */,
 				CA0884752604535D002DABDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +105,7 @@
 		CA0884762604535D002DABDA /* CountriesX */ = {
 			isa = PBXGroup;
 			children = (
+				CA0884A8260453A4002DABDA /* Utilities */,
 				CA0884772604535D002DABDA /* CountriesXApp.swift */,
 				CA0884792604535D002DABDA /* ContentView.swift */,
 				CA08847B2604535E002DABDA /* Assets.xcassets */,
@@ -115,19 +126,48 @@
 		CA0884882604535E002DABDA /* CountriesXTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA0884892604535F002DABDA /* CountriesXTests.swift */,
+				CA0884D826045A7B002DABDA /* NetworkMocking */,
+				CA0884BB260457E3002DABDA /* Repositories */,
+				CA0884CF260458B2002DABDA /* Mocks */,
 				CA08848B2604535F002DABDA /* Info.plist */,
+				CA85D24A2604EDFB009EE19D /* TestHelpers.swift */,
 			);
 			path = CountriesXTests;
 			sourceTree = "<group>";
 		};
-		CA0884932604535F002DABDA /* CountriesXUITests */ = {
+		CA0884A8260453A4002DABDA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CA0884942604535F002DABDA /* CountriesXUITests.swift */,
-				CA0884962604535F002DABDA /* Info.plist */,
+				CA0884A9260453BE002DABDA /* APICall.swift */,
+				CA0884B1260453FF002DABDA /* WebRepository.swift */,
+				CA0884B626045615002DABDA /* NetworkingHelpers.swift */,
 			);
-			path = CountriesXUITests;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CA0884BB260457E3002DABDA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CA0884CA26045842002DABDA /* WebRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CA0884CF260458B2002DABDA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CA0884D826045A7B002DABDA /* NetworkMocking */ = {
+			isa = PBXGroup;
+			children = (
+				CA0884E126045B21002DABDA /* MockedResponse.swift */,
+				CA0884D926045AA6002DABDA /* RequestMocking.swift */,
+			);
+			path = NetworkMocking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0884B2260453FF002DABDA /* WebRepository.swift in Sources */,
 				CA08847A2604535D002DABDA /* ContentView.swift in Sources */,
 				CA0884782604535D002DABDA /* CountriesXApp.swift in Sources */,
+				CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */,
+				CA0884AA260453BE002DABDA /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA08848A2604535F002DABDA /* CountriesXTests.swift in Sources */,
+				CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */,
+				CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */,
+				CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */,
+				CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */,
+				CA0884CB26045842002DABDA /* WebRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0884952604535F002DABDA /* CountriesXUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

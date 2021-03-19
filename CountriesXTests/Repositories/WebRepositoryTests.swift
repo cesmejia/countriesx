@@ -38,6 +38,22 @@ class WebRepositoryTests: XCTestCase {
         wait(for: [exp], timeout: 2)
     }
     
+//    func test_webRepository_parseError() throws {
+//
+//    }
+    
+    func test_webRepository_httpCodeFailure() throws {
+        let data = TestWebRepository.TestData()
+        try mock(.test, result: .success(data), httpCode: 500)
+        let exp = XCTestExpectation(description: "Completion")
+        sut.load(.test).sinkToResult { result in
+            XCTAssertTrue(Thread.isMainThread)
+            result.assertFailure("Unexpected HTTP code: 500")
+            exp.fulfill()
+        }.store(in: &subscriptions)
+        wait(for: [exp], timeout: 2)
+    }
+    
     // MARK: - Helper
     
     private func mock<T>(_ apiCall: API, result: Result<T, Swift.Error>, httpCode: HTTPCode = 200) throws where T: Encodable {

@@ -19,6 +19,7 @@
 		CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884D926045AA6002DABDA /* RequestMocking.swift */; };
 		CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884E126045B21002DABDA /* MockedResponse.swift */; };
 		CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D24A2604EDFB009EE19D /* TestHelpers.swift */; };
+		CA85D2512604F2A6009EE19D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D2502604F2A6009EE19D /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CA0884D926045AA6002DABDA /* RequestMocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMocking.swift; sourceTree = "<group>"; };
 		CA0884E126045B21002DABDA /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
 		CA85D24A2604EDFB009EE19D /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		CA85D2502604F2A6009EE19D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		CA0884762604535D002DABDA /* CountriesX */ = {
 			isa = PBXGroup;
 			children = (
+				CA85D24F2604F293009EE19D /* Models */,
 				CA0884A8260453A4002DABDA /* Utilities */,
 				CA0884772604535D002DABDA /* CountriesXApp.swift */,
 				CA0884792604535D002DABDA /* ContentView.swift */,
@@ -168,6 +171,14 @@
 				CA0884D926045AA6002DABDA /* RequestMocking.swift */,
 			);
 			path = NetworkMocking;
+			sourceTree = "<group>";
+		};
+		CA85D24F2604F293009EE19D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA85D2502604F2A6009EE19D /* Models.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 				CA0884B2260453FF002DABDA /* WebRepository.swift in Sources */,
 				CA08847A2604535D002DABDA /* ContentView.swift in Sources */,
 				CA0884782604535D002DABDA /* CountriesXApp.swift in Sources */,
+				CA85D2512604F2A6009EE19D /* Models.swift in Sources */,
 				CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */,
 				CA0884AA260453BE002DABDA /* APICall.swift in Sources */,
 			);

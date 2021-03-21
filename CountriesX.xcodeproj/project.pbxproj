@@ -22,6 +22,7 @@
 		CA651A3E2607932500F6B732 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA651A3D2607932500F6B732 /* CancelBag.swift */; };
 		CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D24A2604EDFB009EE19D /* TestHelpers.swift */; };
 		CA85D2512604F2A6009EE19D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D2502604F2A6009EE19D /* Models.swift */; };
+		CA87F7E626080082007FE401 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87F7E526080082007FE401 /* CoreDataStackTests.swift */; };
 		CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444026079B4200CD0AE0 /* Models+CoreData.swift */; };
 		CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444526079BA700CD0AE0 /* MockedData.swift */; };
 		CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */; };
@@ -71,6 +72,7 @@
 		CA651A3D2607932500F6B732 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		CA85D24A2604EDFB009EE19D /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		CA85D2502604F2A6009EE19D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CA87F7E526080082007FE401 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
 		CA8A444026079B4200CD0AE0 /* Models+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+CoreData.swift"; sourceTree = "<group>"; };
 		CA8A444526079BA700CD0AE0 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepositoryTests.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		CA0884882604535E002DABDA /* CountriesXTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA87F7E42608006D007FE401 /* Persistence */,
 				CA0884D826045A7B002DABDA /* NetworkMocking */,
 				CA0884BB260457E3002DABDA /* Repositories */,
 				CA0884CF260458B2002DABDA /* Mocks */,
@@ -211,6 +214,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CA87F7E42608006D007FE401 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		CA8A444F26079FCF00CD0AE0 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				CAA590D02607C0530001535B /* CoreDataStack.swift */,
+				CA87F7E526080082007FE401 /* CoreDataStackTests.swift */,
 				CAA590D82607C19F0001535B /* CoreDataHelpers.swift */,
 				CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */,
 			);
@@ -387,6 +398,7 @@
 				CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */,
 				CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */,
 				CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */,
+				CA87F7E626080082007FE401 /* CoreDataStackTests.swift in Sources */,
 				CA0884CB26045842002DABDA /* WebRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

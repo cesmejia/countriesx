@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import CoreData
 
-
+extension CountryMO: ManagedEntity { }
+extension NameTranslationMO: ManagedEntity { }
+extension CountryDetailsMO: ManagedEntity { }
+extension CurrencyMO: ManagedEntity { }
 
 extension Locale {
     static var backendDefault: Locale {

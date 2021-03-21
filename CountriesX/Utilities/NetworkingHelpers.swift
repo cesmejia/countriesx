@@ -38,15 +38,15 @@ extension Publisher {
         })
     }
     
-//    func sinkToLoadable(_ completion: @escaping (Loadable<Output>) -> Void) -> AnyCancellable {
-//        return sink(receiveCompletion: { subscriptionCompletion in
-//            if let error = subscriptionCompletion.error {
-//                completion(.failed(error))
-//            }
-//        }, receiveValue: { value in
-//            completion(.loaded(value))
-//        })
-//    }
+    func sinkToLoadable(_ completion: @escaping (Loadable<Output>) -> Void) -> AnyCancellable {
+        return sink(receiveCompletion: { subscriptionCompletion in
+            if let error = subscriptionCompletion.error {
+                completion(.failed(error))
+            }
+        }, receiveValue: { value in
+            completion(.loaded(value))
+        })
+    }
     
     func extractUnderlyingError() -> Publishers.MapError<Self, Failure> {
         mapError {
@@ -82,11 +82,11 @@ private extension Error {
     }
 }
 
-//extension Subscribers.Completion {
-//    var error: Failure? {
-//        switch self {
-//        case let .failure(error): return error
-//        default: return nil
-//        }
-//    }
-//}
+extension Subscribers.Completion {
+    var error: Failure? {
+        switch self {
+        case let .failure(error): return error
+        default: return nil
+        }
+    }
+}

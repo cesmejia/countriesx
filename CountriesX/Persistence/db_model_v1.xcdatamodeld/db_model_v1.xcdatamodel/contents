@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="alpha3code" attributeType="String"/>
+        <attribute name="flagURL" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="population" attributeType="Integer 32" minValueString="0" usesScalarValueType="YES"/>
+        <relationship name="borders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CountryDetails" inverseName="borders" inverseEntity="CountryDetails"/>
+        <relationship name="countryDetails" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CountryDetails" inverseName="country" inverseEntity="CountryDetails"/>
+        <relationship name="nameTranslations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NameTranslation" inverseName="country" inverseEntity="NameTranslation"/>
+    </entity>
+    <entity name="CountryDetails" representedClassName="CountryDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="capital" attributeType="String"/>
+        <relationship name="borders" toMany="YES" deletionRule="Nullify" destinationEntity="Country" inverseName="borders" inverseEntity="Country"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="countryDetails" inverseEntity="Country"/>
+        <relationship name="currencies" toMany="YES" deletionRule="Nullify" destinationEntity="Currency" inverseName="countryDetails" inverseEntity="Currency"/>
+    </entity>
+    <entity name="Currency" representedClassName="Currency" syncable="YES" codeGenerationType="class">
+        <attribute name="code" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="symbol" optional="YES" attributeType="String"/>
+        <relationship name="countryDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CountryDetails" inverseName="currencies" inverseEntity="CountryDetails"/>
+    </entity>
+    <entity name="NameTranslation" representedClassName="NameTranslation" syncable="YES" codeGenerationType="class">
+        <attribute name="locale" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="nameTranslations" inverseEntity="Country"/>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="CountryDetails" positionX="-63" positionY="9" width="128" height="89"/>
+        <element name="Currency" positionX="-54" positionY="18" width="128" height="89"/>
+        <element name="NameTranslation" positionX="-36" positionY="45" width="128" height="74"/>
+    </elements>
+</model>

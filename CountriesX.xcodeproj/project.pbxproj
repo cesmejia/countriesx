@@ -26,6 +26,11 @@
 		CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444526079BA700CD0AE0 /* MockedData.swift */; };
 		CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */; };
 		CA8A44512607A00100CD0AE0 /* CountriesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */; };
+		CA8A44592607B81300CD0AE0 /* CountriesDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A44582607B81300CD0AE0 /* CountriesDBRepository.swift */; };
+		CA8A445E2607B8BE00CD0AE0 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A445D2607B8BE00CD0AE0 /* LazyList.swift */; };
+		CAA590D12607C0530001535B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA590D02607C0530001535B /* CoreDataStack.swift */; };
+		CAA590D92607C19F0001535B /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA590D82607C19F0001535B /* CoreDataHelpers.swift */; };
+		CAA7AAEF2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,11 @@
 		CA8A444526079BA700CD0AE0 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepositoryTests.swift; sourceTree = "<group>"; };
 		CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepository.swift; sourceTree = "<group>"; };
+		CA8A44582607B81300CD0AE0 /* CountriesDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDBRepository.swift; sourceTree = "<group>"; };
+		CA8A445D2607B8BE00CD0AE0 /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyList.swift; path = CountriesX/Repositories/LazyList.swift; sourceTree = SOURCE_ROOT; };
+		CAA590D02607C0530001535B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = SOURCE_ROOT; };
+		CAA590D82607C19F0001535B /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		CAA7AAEE2607CD2300E0BFF6 /* db_model_v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db_model_v1.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,7 @@
 		CA0884762604535D002DABDA /* CountriesX */ = {
 			isa = PBXGroup;
 			children = (
+				CAA590CF2607C01B0001535B /* Persistence */,
 				CA8A444F26079FCF00CD0AE0 /* Repositories */,
 				CA85D24F2604F293009EE19D /* Models */,
 				CA0884A8260453A4002DABDA /* Utilities */,
@@ -154,6 +165,7 @@
 		CA0884A8260453A4002DABDA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CA8A445D2607B8BE00CD0AE0 /* LazyList.swift */,
 				CA0884A9260453BE002DABDA /* APICall.swift */,
 				CA0884B1260453FF002DABDA /* WebRepository.swift */,
 				CA0884B626045615002DABDA /* NetworkingHelpers.swift */,
@@ -203,8 +215,19 @@
 			isa = PBXGroup;
 			children = (
 				CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */,
+				CA8A44582607B81300CD0AE0 /* CountriesDBRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CAA590CF2607C01B0001535B /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CAA590D02607C0530001535B /* CoreDataStack.swift */,
+				CAA590D82607C19F0001535B /* CoreDataHelpers.swift */,
+				CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,14 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA590D92607C19F0001535B /* CoreDataHelpers.swift in Sources */,
+				CA8A44592607B81300CD0AE0 /* CountriesDBRepository.swift in Sources */,
 				CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */,
 				CA0884B2260453FF002DABDA /* WebRepository.swift in Sources */,
 				CA651A39260792CE00F6B732 /* Loadable.swift in Sources */,
 				CA651A3E2607932500F6B732 /* CancelBag.swift in Sources */,
 				CA08847A2604535D002DABDA /* ContentView.swift in Sources */,
+				CA8A445E2607B8BE00CD0AE0 /* LazyList.swift in Sources */,
+				CAA590D12607C0530001535B /* CoreDataStack.swift in Sources */,
 				CA0884782604535D002DABDA /* CountriesXApp.swift in Sources */,
 				CA85D2512604F2A6009EE19D /* Models.swift in Sources */,
 				CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */,
+				CAA7AAEF2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld in Sources */,
 				CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */,
 				CA8A44512607A00100CD0AE0 /* CountriesWebRepository.swift in Sources */,
 				CA0884AA260453BE002DABDA /* APICall.swift in Sources */,
@@ -670,6 +698,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CAA7AAEE2607CD2300E0BFF6 /* db_model_v1.xcdatamodel */,
+			);
+			currentVersion = CAA7AAEE2607CD2300E0BFF6 /* db_model_v1.xcdatamodel */;
+			path = db_model_v1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA08846C2604535D002DABDA /* Project object */;
 }

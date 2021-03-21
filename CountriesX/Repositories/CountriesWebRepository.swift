@@ -18,6 +18,11 @@ struct RealCountriesWebRepository: CountriesWebRepository {
     var baseURL: String
     var bgQueue = DispatchQueue(label: "bg_parse_queue")
     
+    init(session: URLSession, baseURL: String) {
+        self.session = session
+        self.baseURL = baseURL
+    }
+    
     func loadCountries() -> AnyPublisher<[Country], Error> {
         call(endpoint: API.allCountries)
     }

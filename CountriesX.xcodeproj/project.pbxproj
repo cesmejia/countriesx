@@ -24,6 +24,8 @@
 		CA85D2512604F2A6009EE19D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D2502604F2A6009EE19D /* Models.swift */; };
 		CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444026079B4200CD0AE0 /* Models+CoreData.swift */; };
 		CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444526079BA700CD0AE0 /* MockedData.swift */; };
+		CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */; };
+		CA8A44512607A00100CD0AE0 /* CountriesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		CA85D2502604F2A6009EE19D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CA8A444026079B4200CD0AE0 /* Models+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+CoreData.swift"; sourceTree = "<group>"; };
 		CA8A444526079BA700CD0AE0 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepositoryTests.swift; sourceTree = "<group>"; };
+		CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		CA0884762604535D002DABDA /* CountriesX */ = {
 			isa = PBXGroup;
 			children = (
+				CA8A444F26079FCF00CD0AE0 /* Repositories */,
 				CA85D24F2604F293009EE19D /* Models */,
 				CA0884A8260453A4002DABDA /* Utilities */,
 				CA0884772604535D002DABDA /* CountriesXApp.swift */,
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0884CA26045842002DABDA /* WebRepositoryTests.swift */,
+				CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 				CA8A444526079BA700CD0AE0 /* MockedData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CA8A444F26079FCF00CD0AE0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +345,7 @@
 				CA85D2512604F2A6009EE19D /* Models.swift in Sources */,
 				CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */,
 				CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */,
+				CA8A44512607A00100CD0AE0 /* CountriesWebRepository.swift in Sources */,
 				CA0884AA260453BE002DABDA /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */,
+				CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */,
 				CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */,
 				CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */,
 				CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */,

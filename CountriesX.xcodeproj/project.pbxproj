@@ -32,6 +32,9 @@
 		CAA590D12607C0530001535B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA590D02607C0530001535B /* CoreDataStack.swift */; };
 		CAA590D92607C19F0001535B /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA590D82607C19F0001535B /* CoreDataHelpers.swift */; };
 		CAA7AAEF2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */; };
+		CAAB9D602608DE0800886CE8 /* CountriesDBRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9D5F2608DE0800886CE8 /* CountriesDBRepositoryTests.swift */; };
+		CAAB9D652608DE6500886CE8 /* MockedPersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9D642608DE6500886CE8 /* MockedPersistentStore.swift */; };
+		CAAB9D6A2608DF3700886CE8 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9D692608DF3700886CE8 /* Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		CAA590D02607C0530001535B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = SOURCE_ROOT; };
 		CAA590D82607C19F0001535B /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		CAA7AAEE2607CD2300E0BFF6 /* db_model_v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db_model_v1.xcdatamodel; sourceTree = "<group>"; };
+		CAAB9D5F2608DE0800886CE8 /* CountriesDBRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDBRepositoryTests.swift; sourceTree = "<group>"; };
+		CAAB9D642608DE6500886CE8 /* MockedPersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPersistentStore.swift; sourceTree = "<group>"; };
+		CAAB9D692608DF3700886CE8 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 			children = (
 				CA0884CA26045842002DABDA /* WebRepositoryTests.swift */,
 				CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */,
+				CAAB9D5F2608DE0800886CE8 /* CountriesDBRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -191,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */,
+				CAAB9D692608DF3700886CE8 /* Mock.swift */,
+				CAAB9D642608DE6500886CE8 /* MockedPersistentStore.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -393,7 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAB9D602608DE0800886CE8 /* CountriesDBRepositoryTests.swift in Sources */,
+				CAAB9D6A2608DF3700886CE8 /* Mock.swift in Sources */,
 				CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */,
+				CAAB9D652608DE6500886CE8 /* MockedPersistentStore.swift in Sources */,
 				CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */,
 				CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */,
 				CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */,

@@ -10,20 +10,20 @@ import SwiftUI
 import Combine
 import Foundation
 
-//extension Just where Output == Void {
-//    static func withErrorType<E>(_ errorType: E.Type) -> AnyPublisher<Void, E> {
-//        return withErrorType((), E.self)
-//    }
-//}
-//
-//extension Just {
-//    static func withErrorType<E>(_ value: Output, _ errorType: E.Type
-//    ) -> AnyPublisher<Output, E> {
-//        return Just(value)
-//            .setFailureType(to: E.self)
-//            .eraseToAnyPublisher()
-//    }
-//}
+extension Just where Output == Void {
+    static func withErrorType<E>(_ errorType: E.Type) -> AnyPublisher<Void, E> {
+        return withErrorType((), E.self)
+    }
+}
+
+extension Just {
+    static func withErrorType<E>(_ value: Output, _ errorType: E.Type
+    ) -> AnyPublisher<Output, E> {
+        return Just(value)
+            .setFailureType(to: E.self)
+            .eraseToAnyPublisher()
+    }
+}
 
 extension Publisher {
     func sinkToResult(_ result: @escaping (Result<Output, Failure>) -> Void) -> AnyCancellable {
@@ -61,14 +61,14 @@ extension Publisher {
     ///   - interval: The minimum time interval that should elapse after the subscription.
     /// - Returns: A publisher that optionally delays delivery of elements to the downstream receiver.
     
-//    func ensureTimeSpan(_ interval: TimeInterval) -> AnyPublisher<Output, Failure> {
-//        let timer = Just<Void>(())
-//            .delay(for: .seconds(interval), scheduler: RunLoop.main)
-//            .setFailureType(to: Failure.self)
-//        return zip(timer)
-//            .map { $0.0 }
-//            .eraseToAnyPublisher()
-//    }
+    func ensureTimeSpan(_ interval: TimeInterval) -> AnyPublisher<Output, Failure> {
+        let timer = Just<Void>(())
+            .delay(for: .seconds(interval), scheduler: RunLoop.main)
+            .setFailureType(to: Failure.self)
+        return zip(timer)
+            .map { $0.0 }
+            .eraseToAnyPublisher()
+    }
 }
 
 private extension Error {

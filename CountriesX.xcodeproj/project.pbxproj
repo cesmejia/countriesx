@@ -217,6 +217,7 @@
 		CA87F7E42608006D007FE401 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				CA87F7E526080082007FE401 /* CoreDataStackTests.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -234,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				CAA590D02607C0530001535B /* CoreDataStack.swift */,
-				CA87F7E526080082007FE401 /* CoreDataStackTests.swift */,
 				CAA590D82607C19F0001535B /* CoreDataHelpers.swift */,
 				CAA7AAED2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld */,
 			);

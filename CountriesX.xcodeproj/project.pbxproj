@@ -18,6 +18,12 @@
 		CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */; };
 		CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884D926045AA6002DABDA /* RequestMocking.swift */; };
 		CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0884E126045B21002DABDA /* MockedResponse.swift */; };
+		CA39D966260FFDA0002CF7E5 /* ImageWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D965260FFDA0002CF7E5 /* ImageWebRepository.swift */; };
+		CA39D96B260FFE1C002CF7E5 /* ImageWebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D96A260FFE1C002CF7E5 /* ImageWebRepositoryTests.swift */; };
+		CA39D974261008E2002CF7E5 /* svg_convert_02.html in Resources */ = {isa = PBXBuildFile; fileRef = CA39D972261008E2002CF7E5 /* svg_convert_02.html */; };
+		CA39D975261008E2002CF7E5 /* svg_convert_01.html in Resources */ = {isa = PBXBuildFile; fileRef = CA39D973261008E2002CF7E5 /* svg_convert_01.html */; };
+		CA39D97A261009A5002CF7E5 /* PushTokenWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D979261009A5002CF7E5 /* PushTokenWebRepository.swift */; };
+		CA39D98726100A33002CF7E5 /* PushTokenWebRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D98626100A33002CF7E5 /* PushTokenWebRepositoryTests.swift */; };
 		CA651A39260792CE00F6B732 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA651A38260792CE00F6B732 /* Loadable.swift */; };
 		CA651A3E2607932500F6B732 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA651A3D2607932500F6B732 /* CancelBag.swift */; };
 		CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D24A2604EDFB009EE19D /* TestHelpers.swift */; };
@@ -71,6 +77,12 @@
 		CA0884D0260458D7002DABDA /* MockedWebRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedWebRepositories.swift; sourceTree = "<group>"; };
 		CA0884D926045AA6002DABDA /* RequestMocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMocking.swift; sourceTree = "<group>"; };
 		CA0884E126045B21002DABDA /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
+		CA39D965260FFDA0002CF7E5 /* ImageWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebRepository.swift; sourceTree = "<group>"; };
+		CA39D96A260FFE1C002CF7E5 /* ImageWebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebRepositoryTests.swift; sourceTree = "<group>"; };
+		CA39D972261008E2002CF7E5 /* svg_convert_02.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = svg_convert_02.html; path = "../../../clean-architecture-swiftui/UnitTests/Resources/svg_convert_02.html"; sourceTree = "<group>"; };
+		CA39D973261008E2002CF7E5 /* svg_convert_01.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = svg_convert_01.html; path = "../../../clean-architecture-swiftui/UnitTests/Resources/svg_convert_01.html"; sourceTree = "<group>"; };
+		CA39D979261009A5002CF7E5 /* PushTokenWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTokenWebRepository.swift; sourceTree = "<group>"; };
+		CA39D98626100A33002CF7E5 /* PushTokenWebRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushTokenWebRepositoryTests.swift; path = CountriesX/Repositories/PushTokenWebRepositoryTests.swift; sourceTree = SOURCE_ROOT; };
 		CA651A38260792CE00F6B732 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		CA651A3D2607932500F6B732 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		CA85D24A2604EDFB009EE19D /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
@@ -161,6 +173,7 @@
 		CA0884882604535E002DABDA /* CountriesXTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA39D971261008D1002CF7E5 /* Resources */,
 				CA87F7E42608006D007FE401 /* Persistence */,
 				CA0884D826045A7B002DABDA /* NetworkMocking */,
 				CA0884BB260457E3002DABDA /* Repositories */,
@@ -187,9 +200,11 @@
 		CA0884BB260457E3002DABDA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				CA39D98626100A33002CF7E5 /* PushTokenWebRepositoryTests.swift */,
 				CA0884CA26045842002DABDA /* WebRepositoryTests.swift */,
 				CA8A444A26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift */,
 				CAAB9D5F2608DE0800886CE8 /* CountriesDBRepositoryTests.swift */,
+				CA39D96A260FFE1C002CF7E5 /* ImageWebRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -211,6 +226,15 @@
 				CA0884D926045AA6002DABDA /* RequestMocking.swift */,
 			);
 			path = NetworkMocking;
+			sourceTree = "<group>";
+		};
+		CA39D971261008D1002CF7E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA39D973261008E2002CF7E5 /* svg_convert_01.html */,
+				CA39D972261008E2002CF7E5 /* svg_convert_02.html */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CA85D24F2604F293009EE19D /* Models */ = {
@@ -236,6 +260,8 @@
 			children = (
 				CA8A44502607A00100CD0AE0 /* CountriesWebRepository.swift */,
 				CA8A44582607B81300CD0AE0 /* CountriesDBRepository.swift */,
+				CA39D965260FFDA0002CF7E5 /* ImageWebRepository.swift */,
+				CA39D979261009A5002CF7E5 /* PushTokenWebRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -362,6 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D975261008E2002CF7E5 /* svg_convert_01.html in Resources */,
+				CA39D974261008E2002CF7E5 /* svg_convert_02.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,11 +407,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D97A261009A5002CF7E5 /* PushTokenWebRepository.swift in Sources */,
 				CAA590D92607C19F0001535B /* CoreDataHelpers.swift in Sources */,
 				CA8A44592607B81300CD0AE0 /* CountriesDBRepository.swift in Sources */,
 				CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */,
 				CA0884B2260453FF002DABDA /* WebRepository.swift in Sources */,
 				CA651A39260792CE00F6B732 /* Loadable.swift in Sources */,
+				CA39D966260FFDA0002CF7E5 /* ImageWebRepository.swift in Sources */,
 				CA651A3E2607932500F6B732 /* CancelBag.swift in Sources */,
 				CA08847A2604535D002DABDA /* ContentView.swift in Sources */,
 				CA8A445E2607B8BE00CD0AE0 /* LazyList.swift in Sources */,
@@ -409,8 +439,10 @@
 				CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */,
 				CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */,
 				CA0884E226045B21002DABDA /* MockedResponse.swift in Sources */,
+				CA39D96B260FFE1C002CF7E5 /* ImageWebRepositoryTests.swift in Sources */,
 				CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */,
 				CA87F7E626080082007FE401 /* CoreDataStackTests.swift in Sources */,
+				CA39D98726100A33002CF7E5 /* PushTokenWebRepositoryTests.swift in Sources */,
 				CA0884CB26045842002DABDA /* WebRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

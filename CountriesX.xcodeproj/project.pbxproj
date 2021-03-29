@@ -34,6 +34,7 @@
 		CA6CF83A2610251400AC0103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF8392610251400AC0103 /* AppDelegate.swift */; };
 		CA7FB4CF26118265004E5791 /* ImagesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */; };
 		CA7FB4D4261182A3004E5791 /* UserPermissionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */; };
+		CA7FB4D9261184A2004E5791 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */; };
 		CA80036D26113160001ACC19 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80036C26113160001ACC19 /* Store.swift */; };
 		CA8068E02611741700FEA9E2 /* MockedDBRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8068DF2611741700FEA9E2 /* MockedDBRepositories.swift */; };
 		CA8068E52611817700FEA9E2 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8068E42611817700FEA9E2 /* ImagesService.swift */; };
@@ -108,6 +109,7 @@
 		CA6CF8392610251400AC0103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesServiceTests.swift; sourceTree = "<group>"; };
 		CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsServiceTests.swift; sourceTree = "<group>"; };
+		CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
 		CA80036C26113160001ACC19 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA8068DF2611741700FEA9E2 /* MockedDBRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDBRepositories.swift; sourceTree = "<group>"; };
 		CA8068E42611817700FEA9E2 /* ImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			children = (
 				CA68F9F32610ED9200EC6D41 /* DependencyInjector.swift */,
 				CA68F9FB2610EDCA00EC6D41 /* AppState.swift */,
+				CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */,
 			);
 			path = Injected;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				CAA590D12607C0530001535B /* CoreDataStack.swift in Sources */,
 				CA0884782604535D002DABDA /* CountriesXApp.swift in Sources */,
 				CA85D2512604F2A6009EE19D /* Models.swift in Sources */,
+				CA7FB4D9261184A2004E5791 /* ServicesContainer.swift in Sources */,
 				CA68F9F42610ED9200EC6D41 /* DependencyInjector.swift in Sources */,
 				CA68F9EE2610EC6100EC6D41 /* SystemEventsHandler.swift in Sources */,
 				CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */,

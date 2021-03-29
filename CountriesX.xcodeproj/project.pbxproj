@@ -32,8 +32,11 @@
 		CA68F9FC2610EDCA00EC6D41 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68F9FB2610EDCA00EC6D41 /* AppState.swift */; };
 		CA6B1E5B26112F0800D228E2 /* UserPermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B1E5A26112F0800D228E2 /* UserPermissionsService.swift */; };
 		CA6CF83A2610251400AC0103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF8392610251400AC0103 /* AppDelegate.swift */; };
+		CA7FB4CF26118265004E5791 /* ImagesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */; };
+		CA7FB4D4261182A3004E5791 /* UserPermissionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */; };
 		CA80036D26113160001ACC19 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80036C26113160001ACC19 /* Store.swift */; };
 		CA8068E02611741700FEA9E2 /* MockedDBRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8068DF2611741700FEA9E2 /* MockedDBRepositories.swift */; };
+		CA8068E52611817700FEA9E2 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8068E42611817700FEA9E2 /* ImagesService.swift */; };
 		CA85D24B2604EDFB009EE19D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D24A2604EDFB009EE19D /* TestHelpers.swift */; };
 		CA85D2512604F2A6009EE19D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85D2502604F2A6009EE19D /* Models.swift */; };
 		CA87F7E626080082007FE401 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87F7E526080082007FE401 /* CoreDataStackTests.swift */; };
@@ -103,8 +106,11 @@
 		CA68F9FB2610EDCA00EC6D41 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CA6B1E5A26112F0800D228E2 /* UserPermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsService.swift; sourceTree = "<group>"; };
 		CA6CF8392610251400AC0103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesServiceTests.swift; sourceTree = "<group>"; };
+		CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsServiceTests.swift; sourceTree = "<group>"; };
 		CA80036C26113160001ACC19 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA8068DF2611741700FEA9E2 /* MockedDBRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDBRepositories.swift; sourceTree = "<group>"; };
+		CA8068E42611817700FEA9E2 /* ImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
 		CA85D24A2604EDFB009EE19D /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		CA85D2502604F2A6009EE19D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CA87F7E526080082007FE401 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
@@ -283,6 +289,7 @@
 			children = (
 				CA6B1E5A26112F0800D228E2 /* UserPermissionsService.swift */,
 				CA977A6B2611582C0098BAB9 /* CountriesService.swift */,
+				CA8068E42611817700FEA9E2 /* ImagesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -338,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				CA977A7F26115F600098BAB9 /* CountriesServiceTests.swift */,
+				CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */,
+				CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -508,6 +517,7 @@
 				CA977A712611588C0098BAB9 /* Helpers.swift in Sources */,
 				CAA7AAEF2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld in Sources */,
 				CA0884B726045615002DABDA /* NetworkingHelpers.swift in Sources */,
+				CA8068E52611817700FEA9E2 /* ImagesService.swift in Sources */,
 				CA8A44512607A00100CD0AE0 /* CountriesWebRepository.swift in Sources */,
 				CA0884AA260453BE002DABDA /* APICall.swift in Sources */,
 			);
@@ -521,6 +531,7 @@
 				CAAB9D602608DE0800886CE8 /* CountriesDBRepositoryTests.swift in Sources */,
 				CAAB9D6A2608DF3700886CE8 /* Mock.swift in Sources */,
 				CA0884DA26045AA6002DABDA /* RequestMocking.swift in Sources */,
+				CA7FB4D4261182A3004E5791 /* UserPermissionsServiceTests.swift in Sources */,
 				CA977A8026115F600098BAB9 /* CountriesServiceTests.swift in Sources */,
 				CAAB9D652608DE6500886CE8 /* MockedPersistentStore.swift in Sources */,
 				CA8A444B26079E1C00CD0AE0 /* CountriesWebRepositoryTests.swift in Sources */,
@@ -530,6 +541,7 @@
 				CA0884D1260458D7002DABDA /* MockedWebRepositories.swift in Sources */,
 				CA87F7E626080082007FE401 /* CoreDataStackTests.swift in Sources */,
 				CA39D98726100A33002CF7E5 /* PushTokenWebRepositoryTests.swift in Sources */,
+				CA7FB4CF26118265004E5791 /* ImagesServiceTests.swift in Sources */,
 				CA8068E02611741700FEA9E2 /* MockedDBRepositories.swift in Sources */,
 				CA0884CB26045842002DABDA /* WebRepositoryTests.swift in Sources */,
 			);

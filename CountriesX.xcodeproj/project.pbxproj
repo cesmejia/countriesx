@@ -31,7 +31,13 @@
 		CA68F9F42610ED9200EC6D41 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68F9F32610ED9200EC6D41 /* DependencyInjector.swift */; };
 		CA68F9FC2610EDCA00EC6D41 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68F9FB2610EDCA00EC6D41 /* AppState.swift */; };
 		CA6B1E5B26112F0800D228E2 /* UserPermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B1E5A26112F0800D228E2 /* UserPermissionsService.swift */; };
+		CA6C1F2426120D3500C2FEC8 /* DeepLinksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C1F2326120D3500C2FEC8 /* DeepLinksHandler.swift */; };
+		CA6C1F2C26120E4B00C2FEC8 /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C1F2B26120E4B00C2FEC8 /* CountriesListViewModel.swift */; };
+		CA6C9CA926121508009321ED /* CountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C9CA826121508009321ED /* CountriesList.swift */; };
+		CA6C9CAE26121523009321ED /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C9CAD26121523009321ED /* CountryDetails.swift */; };
+		CA6C9CB326121902009321ED /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C9CB226121902009321ED /* CountryDetailsViewModel.swift */; };
 		CA6CF83A2610251400AC0103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF8392610251400AC0103 /* AppDelegate.swift */; };
+		CA7D78F226121CCB009D20AD /* PushNotificationsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */; };
 		CA7FB4CF26118265004E5791 /* ImagesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */; };
 		CA7FB4D4261182A3004E5791 /* UserPermissionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */; };
 		CA7FB4D9261184A2004E5791 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */; };
@@ -106,7 +112,13 @@
 		CA68F9F32610ED9200EC6D41 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
 		CA68F9FB2610EDCA00EC6D41 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CA6B1E5A26112F0800D228E2 /* UserPermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsService.swift; sourceTree = "<group>"; };
+		CA6C1F2326120D3500C2FEC8 /* DeepLinksHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinksHandler.swift; sourceTree = "<group>"; };
+		CA6C1F2B26120E4B00C2FEC8 /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		CA6C9CA826121508009321ED /* CountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesList.swift; sourceTree = "<group>"; };
+		CA6C9CAD26121523009321ED /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		CA6C9CB226121902009321ED /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 		CA6CF8392610251400AC0103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsHandler.swift; sourceTree = "<group>"; };
 		CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesServiceTests.swift; sourceTree = "<group>"; };
 		CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsServiceTests.swift; sourceTree = "<group>"; };
 		CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
@@ -181,6 +193,7 @@
 		CA0884762604535D002DABDA /* CountriesX */ = {
 			isa = PBXGroup;
 			children = (
+				CA6C1F2826120DD500C2FEC8 /* UI */,
 				CA6B1E5926112EFB00D228E2 /* Services */,
 				CA68F9F22610ED7E00EC6D41 /* Injected */,
 				CA6CF838261024FE00AC0103 /* System */,
@@ -189,7 +202,6 @@
 				CA85D24F2604F293009EE19D /* Models */,
 				CA0884A8260453A4002DABDA /* Utilities */,
 				CA0884772604535D002DABDA /* CountriesXApp.swift */,
-				CA0884792604535D002DABDA /* ContentView.swift */,
 				CA08847B2604535E002DABDA /* Assets.xcassets */,
 				CA0884802604535E002DABDA /* Info.plist */,
 				CA08847D2604535E002DABDA /* Preview Content */,
@@ -297,12 +309,50 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		CA6C1F2826120DD500C2FEC8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C1F2926120DDA00C2FEC8 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA6C1F2926120DDA00C2FEC8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C9C9C261214C0009321ED /* CountryDetails */,
+				CA0884792604535D002DABDA /* ContentView.swift */,
+				CA6C1F2A26120DE400C2FEC8 /* CountriesList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CA6C1F2A26120DE400C2FEC8 /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C1F2B26120E4B00C2FEC8 /* CountriesListViewModel.swift */,
+				CA6C9CA826121508009321ED /* CountriesList.swift */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		CA6C9C9C261214C0009321ED /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C9CAD26121523009321ED /* CountryDetails.swift */,
+				CA6C9CB226121902009321ED /* CountryDetailsViewModel.swift */,
+			);
+			path = CountryDetails;
+			sourceTree = "<group>";
+		};
 		CA6CF838261024FE00AC0103 /* System */ = {
 			isa = PBXGroup;
 			children = (
 				CA6CF8392610251400AC0103 /* AppDelegate.swift */,
 				CA68F9E82610EB9600EC6D41 /* SceneDelegate.swift */,
 				CA68F9ED2610EC6100EC6D41 /* SystemEventsHandler.swift */,
+				CA6C1F2326120D3500C2FEC8 /* DeepLinksHandler.swift */,
+				CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -497,9 +547,13 @@
 			files = (
 				CA39D97A261009A5002CF7E5 /* PushTokenWebRepository.swift in Sources */,
 				CAA590D92607C19F0001535B /* CoreDataHelpers.swift in Sources */,
+				CA6C1F2C26120E4B00C2FEC8 /* CountriesListViewModel.swift in Sources */,
 				CA6CF83A2610251400AC0103 /* AppDelegate.swift in Sources */,
 				CA6B1E5B26112F0800D228E2 /* UserPermissionsService.swift in Sources */,
+				CA6C9CAE26121523009321ED /* CountryDetails.swift in Sources */,
+				CA6C9CB326121902009321ED /* CountryDetailsViewModel.swift in Sources */,
 				CA8A44592607B81300CD0AE0 /* CountriesDBRepository.swift in Sources */,
+				CA6C9CA926121508009321ED /* CountriesList.swift in Sources */,
 				CA80036D26113160001ACC19 /* Store.swift in Sources */,
 				CA977A6C2611582C0098BAB9 /* CountriesService.swift in Sources */,
 				CA8A444626079BA700CD0AE0 /* MockedData.swift in Sources */,
@@ -516,7 +570,9 @@
 				CA68F9F42610ED9200EC6D41 /* DependencyInjector.swift in Sources */,
 				CA68F9EE2610EC6100EC6D41 /* SystemEventsHandler.swift in Sources */,
 				CA8A444126079B4200CD0AE0 /* Models+CoreData.swift in Sources */,
+				CA7D78F226121CCB009D20AD /* PushNotificationsHandler.swift in Sources */,
 				CA68F9FC2610EDCA00EC6D41 /* AppState.swift in Sources */,
+				CA6C1F2426120D3500C2FEC8 /* DeepLinksHandler.swift in Sources */,
 				CA68F9E92610EB9600EC6D41 /* SceneDelegate.swift in Sources */,
 				CA977A712611588C0098BAB9 /* Helpers.swift in Sources */,
 				CAA7AAEF2607CD2300E0BFF6 /* db_model_v1.xcdatamodeld in Sources */,

@@ -38,6 +38,7 @@
 		CA6C9CB326121902009321ED /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C9CB226121902009321ED /* CountryDetailsViewModel.swift */; };
 		CA6CF83A2610251400AC0103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF8392610251400AC0103 /* AppDelegate.swift */; };
 		CA7D78F226121CCB009D20AD /* PushNotificationsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */; };
+		CA7D78F7261221A0009D20AD /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D78F6261221A0009D20AD /* AppEnvironment.swift */; };
 		CA7FB4CF26118265004E5791 /* ImagesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */; };
 		CA7FB4D4261182A3004E5791 /* UserPermissionsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */; };
 		CA7FB4D9261184A2004E5791 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */; };
@@ -119,6 +120,7 @@
 		CA6C9CB226121902009321ED /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 		CA6CF8392610251400AC0103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsHandler.swift; sourceTree = "<group>"; };
+		CA7D78F6261221A0009D20AD /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		CA7FB4CE26118265004E5791 /* ImagesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesServiceTests.swift; sourceTree = "<group>"; };
 		CA7FB4D3261182A3004E5791 /* UserPermissionsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsServiceTests.swift; sourceTree = "<group>"; };
 		CA7FB4D8261184A2004E5791 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				CA6CF8392610251400AC0103 /* AppDelegate.swift */,
 				CA68F9E82610EB9600EC6D41 /* SceneDelegate.swift */,
+				CA7D78F6261221A0009D20AD /* AppEnvironment.swift */,
 				CA68F9ED2610EC6100EC6D41 /* SystemEventsHandler.swift */,
 				CA6C1F2326120D3500C2FEC8 /* DeepLinksHandler.swift */,
 				CA7D78F126121CCB009D20AD /* PushNotificationsHandler.swift */,
@@ -562,6 +565,7 @@
 				CA39D966260FFDA0002CF7E5 /* ImageWebRepository.swift in Sources */,
 				CA651A3E2607932500F6B732 /* CancelBag.swift in Sources */,
 				CA08847A2604535D002DABDA /* ContentView.swift in Sources */,
+				CA7D78F7261221A0009D20AD /* AppEnvironment.swift in Sources */,
 				CA8A445E2607B8BE00CD0AE0 /* LazyList.swift in Sources */,
 				CAA590D12607C0530001535B /* CoreDataStack.swift in Sources */,
 				CA0884782604535D002DABDA /* CountriesXApp.swift in Sources */,

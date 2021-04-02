@@ -21,21 +21,21 @@ struct ContentView: View {
 extension ContentView {
     class ViewModel: ObservableObject {
         
-//        let container: DIContainer
-//        let isRunningTests: Bool
-//
-//        init(container: DIContainer, isRunningTests: Bool = ProcessInfo.processInfo.isRunningTests) {
-//            self.container = container
-//            self.isRunningTests = isRunningTests
-//        }
-//
-//        var onChangeHandler: (EnvironmentValues.Diff) -> Void {
-//            return { diff in
-//                if !diff.isDisjoint(with: [.locale, .sizeCategory]) {
-//                    self.container.appState[\.routing] = AppState.ViewRouting()
-//                }
-//            }
-//        }
+        let container: DIContainer
+        let isRunningTests: Bool
+
+        init(container: DIContainer, isRunningTests: Bool = ProcessInfo.processInfo.isRunningTests) {
+            self.container = container
+            self.isRunningTests = isRunningTests
+        }
+
+        var onChangeHandler: (EnvironmentValues.Diff) -> Void { // TODO: Install: SwiftUI Environment Overrides
+            return { diff in
+                if !diff.isDisjoint(with: [.locale, .sizeCategory]) {
+                    self.container.appState[\.routing] = AppState.ViewRouting()
+                }
+            }
+        }
     }
 }
 
